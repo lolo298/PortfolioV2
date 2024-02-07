@@ -6,4 +6,7 @@
 	.full {
 		@apply w-full h-full;
 	}
+	.full-screen {
+		@apply w-screen h-screen;
+	}
 }
