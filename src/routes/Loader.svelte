@@ -4,8 +4,8 @@
 	import anime from 'animejs';
 	import { onMount } from 'svelte';
 
-	export const duration = 20;
-	export const loadingTime = 10000;
+	const duration = 20;
+	export let loadingTime = 10000;
 	export let loaded = false;
 	let loadingText = 'Loading';
 
