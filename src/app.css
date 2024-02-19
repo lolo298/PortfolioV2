@@ -9,6 +9,9 @@
 	.full-screen {
 		@apply w-screen h-screen;
 	}
+	.flex-center {
+		@apply items-center justify-center;
+	}
 }
 
 @layer base {

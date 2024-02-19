@@ -1,75 +1,97 @@
 <script lang="ts">
 	import { navigating } from '$app/stores';
-	import { LoadingStore, Status } from '$lib/store';
-	import anime from 'animejs';
+	import { HamburgerMenuStore, LoadingStore, Status } from '$lib/store';
+	import anime, { type AnimeInstance } from 'animejs';
 	import { onMount } from 'svelte';
 
 	const duration = 20;
 	export let loadingTime = 10000;
 	export let loaded = false;
 	let loadingText = 'Loading';
+	const animations: AnimeInstance[] = [];
+	let textInterval: number;
+	let isMounted = false;
 
-	navigating.subscribe((value) => {
-		if (value && value?.to?.route) {
-			LoadingStore.open();
+	$: {
+		if ($navigating) {
+			console.log('navigating', $navigating);
+			loaded = false;
+			HamburgerMenuStore.close();
+			$navigating?.complete.then(() => {
+				console.log('navigating complete');
+				loaded = true;
+			});
 		}
-	});
+	}
 
 	onMount(() => {
-		const animeLeft = anime({
-			targets: '.pannel-left',
-			keyframes: [
-				{ rotateY: -20, duration: 1000, easing: 'easeInSine' },
-				{ rotateY: 0, duration: 1000, easing: 'easeOutSine' }
-			],
-			duration: 2000,
-			loop: true,
-			delay: anime.stagger(250, { direction: 'reverse' }),
-			endDelay: 1000
-		});
-		const animeRight = anime({
-			targets: '.pannel-right',
-			keyframes: [
-				{ rotateY: 20, duration: 1000, easing: 'easeInSine' },
-				{ rotateY: 0, duration: 1000, easing: 'easeOutSine' }
-			],
-			duration: 2000,
-			loop: true,
-			delay: anime.stagger(250),
-			endDelay: 1000
-		});
-
-		let loadingDots = 0;
-
-		const textInterval = setInterval(() => {
-			loadingDots = (loadingDots + 1) % 4;
-			loadingText = 'Loading' + '.'.repeat(loadingDots);
-		}, 850);
-
+		console.log('onMount');
+		isMounted = true;
 		setTimeout(() => {
+			console.log('setTimeout');
 			loaded = true;
-			animeLeft.pause();
-			animeRight.pause();
-
-			animeLeft.seek(0);
-			animeRight.seek(0);
+			for (const animation of animations) {
+				animation.pause();
+				animation.seek(0);
+			}
 
 			clearInterval(textInterval);
 
 			loadingText = '';
-			// anime({
-			// 	targets: '.loading-text',
-			// 	keyframes: [
-			// 		{ opacity: 0.5, duration: 1000, easing: 'easeInSine' },
-			// 		{ opacity: 1, duration: 1000, easing: 'easeOutSine' }
-			// 	],
-			// 	duration: 1000,
-			// 	loop: true,
-			// 	direction: 'alternate',
-			// 	easing: 'easeInOutSine'
-			// });
 		}, loadingTime);
 	});
+
+	$: {
+		console.log('loaded', loaded, isMounted);
+		if (isMounted) {
+			if (!loaded) {
+				console.log('setting up animations');
+				const animeLeft = anime({
+					targets: '.pannel-left',
+					keyframes: [
+						{ rotateY: -20, duration: 1000, easing: 'easeInSine' },
+						{ rotateY: 0, duration: 1000, easing: 'easeOutSine' }
+					],
+					duration: 2000,
+					loop: true,
+					delay: anime.stagger(250, { direction: 'reverse' }),
+					endDelay: 1000
+				});
+				const animeRight = anime({
+					targets: '.pannel-right',
+					keyframes: [
+						{ rotateY: 20, duration: 1000, easing: 'easeInSine' },
+						{ rotateY: 0, duration: 1000, easing: 'easeOutSine' }
+					],
+					duration: 2000,
+					loop: true,
+					delay: anime.stagger(250),
+					endDelay: 1000
+				});
+
+				animations.push(animeLeft);
+				animations.push(animeRight);
+
+				let loadingDots = 0;
+
+				textInterval = setInterval(() => {
+					loadingDots = (loadingDots + 1) % 4;
+					loadingText = 'Loading' + '.'.repeat(loadingDots);
+				}, 850);
+			} else {
+				for (const animation of animations) {
+					animation.pause();
+					animation.seek(0);
+				}
+
+				animations.length = 0;
+
+				clearInterval(textInterval);
+
+				loadingText = '';
+			}
+		}
+	}
 </script>
 
 <div class="full-screen">
@@ -86,19 +108,19 @@
 		</h1>
 	</div>
 	<div
-		class="absolute inset-0 full divide-x-2 divide-secondary-700 flex [perspective:500px] text-white overflow-hidden"
+		class="absolute inset-0 full divide-x-2 divide-secondary-400/50 flex [perspective:500px] text-white overflow-hidden"
 	>
 		<span class="loading-text z-10 absolute inset-x-0 text-center top-3/4">{loadingText}</span>
 		<span class="loading-text z-10 absolute inset-x-0 text-center bottom-3/4">{loadingText}</span>
-		<div class="flex-[3] origin-left relative pannel-left bg-secondary-900"></div>
-		<div class="flex-[2] origin-left relative pannel-left bg-secondary-900"></div>
-		<div class="flex-[2] origin-left relative pannel-left bg-secondary-900"></div>
-		<div class="flex-[2] origin-left relative pannel-left bg-secondary-900"></div>
+		<div class="flex-[3] origin-left relative pannel-left bg-secondary-950"></div>
+		<div class="flex-[2] origin-left relative pannel-left bg-secondary-950"></div>
+		<div class="flex-[2] origin-left relative pannel-left bg-secondary-950"></div>
+		<div class="flex-[2] origin-left relative pannel-left bg-secondary-950"></div>
 
-		<div class="flex-[2] origin-right relative pannel-right bg-secondary-900 border-dashed"></div>
-		<div class="flex-[2] origin-right relative pannel-right bg-secondary-900"></div>
-		<div class="flex-[2] origin-right relative pannel-right bg-secondary-900"></div>
-		<div class="flex-[3] origin-right relative pannel-right bg-secondary-900"></div>
+		<div class="flex-[2] origin-right relative pannel-right bg-secondary-950 border-dashed"></div>
+		<div class="flex-[2] origin-right relative pannel-right bg-secondary-950"></div>
+		<div class="flex-[2] origin-right relative pannel-right bg-secondary-950"></div>
+		<div class="flex-[3] origin-right relative pannel-right bg-secondary-950"></div>
 	</div>
 	<div class="absolute top-0 pointer-events-none">
 		<svg

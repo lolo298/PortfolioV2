@@ -34,14 +34,18 @@ export const LoadingStore = createLoading();
 
 interface IMenuStore extends Omit<Writable<boolean>, 'set' | 'update'> {
 	toggle: () => void;
+	open: () => void;
+	close: () => void;
 }
 
 function createHamburgerMenu(): IMenuStore {
-	const { subscribe, update } = writable<boolean>(false);
+	const { subscribe, update, set } = writable<boolean>(false);
 
 	return {
 		subscribe,
-		toggle: () => update((state) => !state)
+		toggle: () => update((state) => !state),
+		open: () => set(true),
+		close: () => set(false)
 	};
 }
 

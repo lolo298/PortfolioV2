@@ -2,6 +2,7 @@
 	import Competence from '$lib/components/Competence.svelte';
 	import iutImg from '$lib/img/iut.png?enhanced';
 	import reactIcon from '$lib/img/react.svg?enhanced';
+	import svelteIcon from '$lib/img/svelte.svg?enhanced';
 </script>
 
 <figure>
