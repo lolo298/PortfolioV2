@@ -8,7 +8,7 @@
 
 <div
 	class="fixed inset-0 bg-secondary-900 z-10 p-4 transition-transform flex flex-col justify-between"
-	class:translate-x-full={$HamburgerMenuStore}
+	class:translate-x-full={!$HamburgerMenuStore}
 >
 	<div class="h-12 flex justify-between items-center px-4 text-primary">
 		<span class="bg-secondary-600 px-2 font-bold">Lorenzo Aoulini</span>

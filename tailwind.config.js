@@ -15,6 +15,12 @@ export default {
 			},
 			fontFamily: {
 				primary: ['aeoniktrial', ...defaultTheme.fontFamily.sans]
+			},
+			spacing: {
+				'2/1': '200%'
+			},
+			gridTemplateColumns: {
+				'image-3': '11fr 19fr 7fr'
 			}
 		}
 	},

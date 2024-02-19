@@ -77,12 +77,12 @@
 		<h1
 			class="text-5xl text-white font-bold full text-center flex justify-center items-center flex-col"
 		>
-			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Dévellopeur Back-End</span>
+			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur Back-End</span>
 		</h1>
 		<h1
 			class="text-5xl text-black bg-primary font-bold absolute inset-0 [clip-path:url(#clip0)] full text-center flex justify-center items-center flex-col"
 		>
-			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Dévellopeur Back-End</span>
+			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur Back-End</span>
 		</h1>
 	</div>
 	<div
