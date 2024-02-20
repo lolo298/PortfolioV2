@@ -1,37 +1,14 @@
 <script lang="ts">
 	import Button from '$lib/components/Button.svelte';
-	import userSvg from '$lib/img/user.svg';
+	import type { PageData } from './$types';
 
-	console.log(userSvg);
-
-	const projects = [
-		{
-			name: 'Projet 1',
-			client: 'Client 1',
-			url: '#Projet1',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie sit amet elit non maximus. Praesent viverra felis in faucibus congue. Vivamus eget magna eu enim eleifend dictum. Aliquam condimentum vestibulum nulla eget tincidunt. Nunc id ultrices ex. Nunc vulputate purus eget leo faucibus volutpat.'
-		},
-		{
-			name: 'Projet 2',
-			client: 'Client 2',
-			url: '#Projet2',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie sit amet elit non maximus. Praesent viverra felis in faucibus congue. Vivamus eget magna eu enim eleifend dictum. Aliquam condimentum vestibulum nulla eget tincidunt. Nunc id ultrices ex. Nunc vulputate purus eget leo faucibus volutpat.'
-		},
-		{
-			name: 'Projet 3',
-			client: 'Client 3',
-			url: '#Projet3',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie sit amet elit non maximus. Praesent viverra felis in faucibus congue. Vivamus eget magna eu enim eleifend dictum. Aliquam condimentum vestibulum nulla eget tincidunt. Nunc id ultrices ex. Nunc vulputate purus eget leo faucibus volutpat.'
-		}
-	];
+	export let data: PageData;
+	const { projects } = data;
 </script>
 
 {#each projects as project}
 	<div class="flex flex-col gap-4">
-		<h2 class="text-2xl">{project.name}</h2>
+		<h2 class="text-2xl">{project.title}</h2>
 		<div>
 			<div class="flex items-center gap-3">
 				<div
