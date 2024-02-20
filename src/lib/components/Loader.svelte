@@ -77,7 +77,7 @@
 				textInterval = setInterval(() => {
 					loadingDots = (loadingDots + 1) % 4;
 					loadingText = 'Loading' + '.'.repeat(loadingDots);
-				}, 850);
+				}, 850) as unknown as number;
 			} else {
 				for (const animation of animations) {
 					animation.pause();
@@ -133,7 +133,7 @@
 			<clipPath
 				id="clip0"
 				clipPathUnits="objectBoundingBox"
-				style="transform: translateX(90vw) translateY(90vh) scale(0.001111111111, 0.0005555555556);"
+				style="transform: translateX(45vw) translateY(45vh) scale(0.001111111111, 0.0005555555556);"
 			>
 				<path
 					d="M146.2 -131.2C176.6 -78.4 179.7 -18.3 164.8 33.9C149.9 86.1 117.1 130.4 66.4 165.4C15.8 200.3 -52.6 225.8 -115.4 207.8C-178.2 189.8 -235.3 128.3 -251.5 57.4C-267.7 -13.5 -242.9 -93.7 -194.2 -150.7C-145.4 -207.6 -72.7 -241.3 -7.4 -235.4C57.9 -229.5 115.7 -183.9 146.2 -131.2"

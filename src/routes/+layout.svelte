@@ -42,7 +42,7 @@
 		<NavbarMenu />
 		<div class="bg-white rounded-lg overflow-y-scroll overflow-x-hidden h-full">
 			<Navbar />
-			<div class="*:p-2 relative flex flex-col gap-16">
+			<div class="*:p-2 relative flex flex-col gap-16 text-base">
 				<slot />
 			</div>
 		</div>
