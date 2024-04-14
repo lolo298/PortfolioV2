@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Mon projet template",
+		"description": "Description de mon projet template",
+		"role": "Dev",
+		"client": "Gregoire",
+		"date": "2023-2024",
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?"
+	},
+  {
+    "title": "Mon second projet",
+    "description": "Description de mon second projet",
+    "role": "Dev",
+    "client": "Gregoire",
+    "date": "2023-2024",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?"
+  }
+]

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Button from '$lib/components/Button.svelte';
-	import type { PageData } from './$types';
+	import type { LayoutData } from './$types';
 
-	export let data: PageData;
+	export let data: LayoutData;
 	const { projects } = data;
 </script>
 
