@@ -5,14 +5,34 @@
 		"role": "Dev",
 		"client": "Gregoire",
 		"date": "2023-2024",
-		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?"
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?",
+		"images": [
+			{
+				"src": "https://picsum.photos/200/300",
+				"alt": "Image 1"
+			},
+			{
+				"src": "https://picsum.photos/200/400",
+				"alt": "Image 2"
+			}
+		]
 	},
-  {
-    "title": "Mon second projet",
-    "description": "Description de mon second projet",
-    "role": "Dev",
-    "client": "Gregoire",
-    "date": "2023-2024",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?"
-  }
+	{
+		"title": "Mon second projet",
+		"description": "Description de mon second projet",
+		"role": "Dev",
+		"client": "Gregoire",
+		"date": "2023-2024",
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?",
+		"images": [
+			{
+				"src": "https://picsum.photos/200/300",
+				"alt": "Image 1"
+			},
+			{
+				"src": "https://picsum.photos/200/400",
+				"alt": "Image 2"
+			}
+		]
+	}
 ]

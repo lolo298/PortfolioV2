@@ -17,7 +17,6 @@
 
 	$: {
 		if (isMounted) {
-			console.log('layout', loaded);
 			if (loaded) {
 				let vpHeight = window.innerHeight;
 				wrapper.classList.remove('overflow-hidden');

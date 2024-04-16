@@ -14,21 +14,17 @@
 
 	$: {
 		if ($navigating) {
-			console.log('navigating', $navigating);
 			loaded = false;
 			HamburgerMenuStore.close();
 			$navigating?.complete.then(() => {
-				console.log('navigating complete');
 				loaded = true;
 			});
 		}
 	}
 
 	onMount(() => {
-		console.log('onMount');
 		isMounted = true;
 		setTimeout(() => {
-			console.log('setTimeout');
 			loaded = true;
 			for (const animation of animations) {
 				animation.pause();
@@ -42,10 +38,8 @@
 	});
 
 	$: {
-		console.log('loaded', loaded, isMounted);
 		if (isMounted) {
 			if (!loaded) {
-				console.log('setting up animations');
 				const animeLeft = anime({
 					targets: '.pannel-left',
 					keyframes: [

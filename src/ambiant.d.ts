@@ -7,4 +7,5 @@ declare interface ProjectMeta {
 	client: string;
 	date: string;
 	content: string;
+	images: { src: string; alt: string }[];
 }

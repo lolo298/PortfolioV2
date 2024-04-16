@@ -10,8 +10,8 @@
 	class="fixed inset-0 bg-secondary-950 z-10 p-4 transition-transform flex flex-col justify-between"
 	class:translate-x-full={!$HamburgerMenuStore}
 >
-	<div class="h-12 flex justify-between items-center px-4 text-primary">
-		<span class="bg-secondary-100 px-2 font-bold">Lorenzo Aoulini</span>
+	<div class="h-12 flex justify-between items-center px-4 text-primary-500">
+		<span class="px-2 font-bold">Lorenzo Aoulini</span>
 		<button on:click={toggleMenu}><i class="fa-solid fa-x text-2xl"></i></button>
 	</div>
 
@@ -20,7 +20,7 @@
 		<a href="/projets#page">Projets</a>
 		<a href="/">Mon CV</a>
 	</div>
-	<div class="h-12 flex justify-evenly text-xl text-primary">
+	<div class="h-12 flex justify-evenly text-xl text-primary-500">
 		<a href="/">Linkedin</a>
 		<a href="/">Github</a>
 		<a href="/">Mail</a>

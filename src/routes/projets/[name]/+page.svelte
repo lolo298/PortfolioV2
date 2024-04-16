@@ -1,11 +1,22 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import Portal from 'svelte-portal';
 	import type { PageData } from './$types';
+	import anime from 'animejs';
+	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
+	import { RemToPx } from '$lib/utils';
+	import Viewer from '$lib/components/Viewer.svelte';
+	import { viewer } from '$lib/actions';
+	import { ViewerStore } from '$lib/store';
 
 	export let data: PageData;
 	const { project } = data;
+
+	let showPage = false;
 </script>
 
+<Viewer />
 <div class="p-2">
 	<section>
 		<h2 class="text-5xl mt-10">{project.title}</h2>
@@ -27,15 +38,18 @@
 	<section class="text-xl">
 		<p>{project.content}</p>
 	</section>
-	<section class="flex flex-col gap-4 mt-4">
-		<div class="w-full overflow-hidden rounded-md">
-			<img src="https://picsum.photos/200/300" alt="random image" class="w-full aspect-[4/5]" />
-		</div>
-		<div class="w-full overflow-hidden rounded-md">
-			<img src="https://picsum.photos/300/200" alt="random image" class="w-full aspect-[4/5]" />
-		</div>
-		<div class="w-full overflow-hidden rounded-md">
-			<img src="https://picsum.photos/400/400" alt="random image" class="w-full aspect-[4/5]" />
-		</div>
-	</section>
+	{#if project.images.length > 0}
+		<section class="flex flex-col gap-4 mt-4">
+			{#each project.images as image}
+				<div class="w-full overflow-hidden rounded-md">
+					<img
+						use:viewer
+						src={image.src}
+						alt={image.alt}
+						class="w-full aspect-[4/5] object-cover"
+					/>
+				</div>
+			{/each}
+		</section>
+	{/if}
 </div>

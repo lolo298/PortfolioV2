@@ -12,7 +12,7 @@ export default {
 					200: '#d9d2ff',
 					300: '#beaeff',
 					400: '#9e80ff',
-					500: '#814dff',
+					500: '#8419ff',
 					DEFAULT: '#691aff',
 					600: '#691aff',
 					700: '#6416eb',
@@ -38,7 +38,9 @@ export default {
 				primary: ['aeoniktrial', ...defaultTheme.fontFamily.sans]
 			},
 			spacing: {
-				'2/1': '200%'
+				'2/1': '200%',
+				'3/2': '150%',
+				'4/3': '133.333%'
 			},
 			gridTemplateColumns: {
 				'image-3': '11fr 19fr 7fr'

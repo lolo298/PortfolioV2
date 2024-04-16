@@ -29,7 +29,6 @@ module.exports = {
 		}
 	],
 	rules: {
-		'no-unused-vars': ['error', { ignoreRestSiblings: true }],
 		'@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }]
 	}
 };

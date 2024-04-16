@@ -21,7 +21,7 @@
 	</div>
 
 	<div class="flex justify-between items-center h-full px-4 text-primary">
-		<span class="bg-secondary-100 px-2 font-bold">Lorenzo Aoulini</span>
+		<span class="px-2 font-bold">Lorenzo Aoulini</span>
 		<button on:click={toggleMenu}><i class="fa-solid fa-bars text-2xl"></i></button>
 	</div>
 </nav>
