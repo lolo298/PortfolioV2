@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="h-1/2 flex flex-col justify-evenly items-center text-5xl text-white">
-		<a href="/">A propos</a>
+		<a href="/#page">A propos</a>
 		<a href="/projets#page">Projets</a>
 		<a href="/">Mon CV</a>
 	</div>
