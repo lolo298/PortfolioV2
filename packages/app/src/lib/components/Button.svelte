@@ -11,6 +11,10 @@
 	type ElementProps = AnchorProps | ButtonProps;
 
 	type $$Props = ElementProps;
+
+	if (asElem === 'a') {
+		$$restProps.href = `${$$restProps.href}#page`;
+	}
 </script>
 
 <svelte:element

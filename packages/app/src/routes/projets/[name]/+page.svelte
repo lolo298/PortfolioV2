@@ -23,7 +23,7 @@
 		<div class="flex gap-4 flex-col my-8">
 			<div>
 				<p class="text-xl">Role</p>
-				<p>{project.role}</p>
+				<p>{project.roles.join(', ')}</p>
 			</div>
 			<div>
 				<p class="text-xl">Client</p>
@@ -31,7 +31,9 @@
 			</div>
 			<div>
 				<p class="text-xl">Date</p>
-				<p>{project.date}</p>
+				<p>
+					{project.start_date ? `${project.start_date} - ${project.end_date}` : project.end_date}
+				</p>
 			</div>
 		</div>
 	</section>
@@ -44,7 +46,7 @@
 				<div class="w-full overflow-hidden rounded-md">
 					<img
 						use:viewer
-						src={image.src}
+						src={image.url}
 						alt={image.alt}
 						class="w-full aspect-[4/5] object-cover"
 					/>

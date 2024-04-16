@@ -1,22 +1,25 @@
 {
-	"name": "portfolio",
-	"private": true,
-	"workspaces": [
-		"packages/*"
-	],
-	"scripts": {
-		"dev": "turbo dev",
-		"build": "turbo build"
-	},
-	"devDependencies": {
-		"turbo": "latest",
-		"@types/eslint": "8.56.0",
-		"@typescript-eslint/eslint-plugin": "^6.0.0",
-		"@typescript-eslint/parser": "^6.0.0",
-		"eslint": "^8.56.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.35.1",
-		"prettier": "^3.1.1",
-		"prettier-plugin-svelte": "^3.1.2"
-	}
+  "name": "portfolio",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "dotenv -- turbo dev",
+    "build": "dotenv -- turbo build"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "@types/eslint": "8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-svelte": "^2.35.1",
+    "prettier": "^3.1.1",
+    "prettier-plugin-svelte": "^3.1.2"
+  },
+  "dependencies": {
+    "dotenv-cli": "^7.4.1"
+  }
 }
