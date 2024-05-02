@@ -88,15 +88,15 @@
 	}
 </script>
 
-<div class="full-screen">
+<div class="full-screen relative z-20">
 	<div class="relative full z-10">
 		<h1
-			class="text-5xl text-white font-bold full text-center flex justify-center items-center flex-col"
+			class="text-5xl lg:text-7xl lg:w-2/3 lg:mx-auto xl:text-[8rem] xl:w-2/3 text-white font-bold full text-center flex justify-center items-center flex-col"
 		>
 			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur Back-End</span>
 		</h1>
 		<h1
-			class="text-5xl text-black bg-primary font-bold absolute inset-0 [clip-path:url(#clip0)] full text-center flex justify-center items-center flex-col"
+			class="text-5xl lg:text-7xl lg:w-2/3 lg:mx-auto xl:text-[8rem] xl:w-2/3 text-black bg-primary font-bold absolute inset-0 [clip-path:url(#clip0)] full text-center flex justify-center items-center flex-col"
 		>
 			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur Back-End</span>
 		</h1>
@@ -104,8 +104,8 @@
 	<div
 		class="absolute inset-0 full divide-x-2 divide-secondary-400/50 flex [perspective:500px] text-white overflow-hidden"
 	>
-		<span class="loading-text z-10 absolute inset-x-0 text-center top-3/4">{loadingText}</span>
-		<span class="loading-text z-10 absolute inset-x-0 text-center bottom-3/4">{loadingText}</span>
+		<span class="loading-text lg:text-2xl z-10 absolute inset-x-0 text-center top-3/4">{loadingText}</span>
+		<span class="loading-text lg:text-2xl z-10 absolute inset-x-0 text-center bottom-3/4">{loadingText}</span>
 		<div class="flex-[3] origin-left relative pannel-left bg-secondary-950"></div>
 		<div class="flex-[2] origin-left relative pannel-left bg-secondary-950"></div>
 		<div class="flex-[2] origin-left relative pannel-left bg-secondary-950"></div>
@@ -127,7 +127,11 @@
 			<clipPath
 				id="clip0"
 				clipPathUnits="userSpaceOnUse"
-				style="transform: translateX(45vw) translateY(45vh) scale(0.6, 0.5);"
+				class="translate-x-[45vw] translate-y-[45vh] scale-x-[0.6] scale-y-[0.5]
+							 md:translate-x-[65vw] md:translate-y-[50vh]
+							 lg:scale-x-[0.8] lg:scale-y-[0.7] lg:translate-x-[45vw] lg:translate-y-[50vh]
+							 xl:scale-[1] xl:translate-x-[45vw] xl:translate-y-[50vh]
+				"
 			>
 				<path
 					d="M146.2 -131.2C176.6 -78.4 179.7 -18.3 164.8 33.9C149.9 86.1 117.1 130.4 66.4 165.4C15.8 200.3 -52.6 225.8 -115.4 207.8C-178.2 189.8 -235.3 128.3 -251.5 57.4C-267.7 -13.5 -242.9 -93.7 -194.2 -150.7C-145.4 -207.6 -72.7 -241.3 -7.4 -235.4C57.9 -229.5 115.7 -183.9 146.2 -131.2"

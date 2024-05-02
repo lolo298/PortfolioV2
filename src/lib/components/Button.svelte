@@ -11,6 +11,8 @@
 	type ElementProps = AnchorProps | ButtonProps;
 
 	type $$Props = ElementProps;
+
+	let { class: _, ...rest } = $$restProps;
 </script>
 
 <svelte:element
@@ -19,7 +21,7 @@
 		'bg-primary text-base text-white py-2 px-4 flex flex-center w-max rounded-full hover:text-primary-900',
 		$$props.class
 	)}
-	{...$$restProps}
+	{...rest}
 >
 	<slot /></svelte:element
 >

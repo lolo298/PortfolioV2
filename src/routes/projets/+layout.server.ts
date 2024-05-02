@@ -11,7 +11,7 @@ export const load: LayoutServerLoad = async () => {
 	for (const project of projects) {
 		metadatas.push({
 			...project,
-			url: `/projets/${project.title.replace(/ /g, '-')}`
+			url: `/projets/${project.title.replace(/ /g, '-')}#page`
 		});
 	}
 

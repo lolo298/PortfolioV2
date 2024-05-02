@@ -40,7 +40,9 @@ export default {
 			spacing: {
 				'2/1': '200%',
 				'3/2': '150%',
-				'4/3': '133.333%'
+				'4/3': '133.333%',
+				'hscreen-1/2': '50vh',
+				'wscreen-1/2': '50vw'
 			},
 			gridTemplateColumns: {
 				'image-3': '11fr 19fr 7fr'

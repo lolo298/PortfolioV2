@@ -9,17 +9,21 @@
 	let viewer: HTMLImageElement;
 
 	onMount(() => {
-		document.onscrollend = () => {
+		if (window.scrollY > 0) {
 			initialY = window.scrollY;
-			document.onscrollend = null;
-		};
+		} else {
+			document.onscrollend = () => {
+				initialY = window.scrollY;
+			};
+			window.addEventListener('resize', () => {
+				ViewerStore.close();
+				initialY = window.innerHeight
+			});
+		}
 	});
 
 	ViewerStore.subscribe(({ isOpen, pos, src, node }) => {
-		console.log('ViewerStore', pos);
 		if (isOpen) {
-			document.body.style.overflow = 'hidden';
-
 			anime({
 				targets: viewer,
 				width: [node?.width, pos.width],
