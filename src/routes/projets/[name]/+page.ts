@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import type { PageServerLoad } from './$types';
+import type { PageLoad } from './$types';
 
 export const load = (async ({ params: { name }, parent }) => {
 	const data = await parent();
@@ -9,7 +9,9 @@ export const load = (async ({ params: { name }, parent }) => {
 		error(404, 'Project not found');
 	}
 
-	return {
-		project
+	return {project: {
+			...project,
+			content: (await import(`../md/${project.title}.md`)).default
+		}
 	};
-}) satisfies PageServerLoad;
+}) satisfies PageLoad;

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { HamburgerMenuStore } from '$lib/store';
+	import Links from './Links.svelte';
+	import Pages from './Pages.svelte';
 
 	function toggleMenu() {
 		HamburgerMenuStore.toggle();
@@ -26,16 +28,12 @@
 			><i class="fa-solid fa-bars text-2xl"></i></button
 		>
 		<div class="hidden md:flex text-xl xl:text-2xl gap-8">
-			<a href="/#page">A propos</a>
-			<a href="/projets#page">Projets</a>
-			<a href="/">Mon CV</a>
+			<Pages />
 		</div>
 		<div
 			class="hidden md:flex flex-col fixed gap-4 top-1/2 md:left-2 lg:left-1/5 xl:left-14 z-50 bg-white p-4 rounded-full shadow-lg"
 		>
-			<a href="/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-			<a href="/"><i class="fa-brands fa-github fa-xl"></i></a>
-			<a href="/"><i class="fa-solid fa-envelope fa-xl"></i></a>
+			<Links />
 		</div>
 	</div>
 </nav>

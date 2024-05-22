@@ -1,33 +1,29 @@
 [
 	{
-		"title": "Mon projet template",
-		"description": "Description de mon projet template",
+		"title": "Portfolio",
+		"description": "Mon portfolio en ligne",
 		"role": "Dev",
-		"client": "Gregoire",
-		"date": "2023-2024",
-		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?",
+		"client": "Lorenzo Aoulini",
+		"date": "2024",
+		"content": "Ce site web est un projet personnel réalisé dans le cadre de mon apprentissage du développement web. Il m'a permis de mettre en pratique mes compétences acquises. Il a été réalisé avec svelte. <br /> Merci a <a href='https://clement-lascar.com/' class='text-primary hover:underline'>Clément Lascar</a> pour le design du site.",
 		"images": [
 			{
-				"src": "https://picsum.photos/400/500",
-				"alt": "Image 1"
-			},
-			{
-				"src": "https://picsum.photos/400/500",
-				"alt": "Image 2"
+				"src": "/portfolio.png",
+				"alt": "portfolio"
 			}
 		]
 	},
 	{
-		"title": "Mon second projet",
-		"description": "Description de mon second projet",
-		"role": "Dev",
-		"client": "Gregoire",
-		"date": "2023-2024",
-		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro modi delectus possimus obcaecati,\ndolorem quae molestias soluta facilis praesentium nam consequatur hic quaerat quidem eum ipsum magni doloribus officiis?",
+		"title": "Apidex",
+		"description": "Pokedex en ligne",
+		"role": "Dev/Designer",
+		"client": "Lorenzo Aoulini",
+		"date": "2021",
+		"content": "ApiDex est un site web réalisé lors de mon apprentissage du développement web. Il m'a nottament permis de découvrir javascript asynchrone ainsi que les requêtes API.",
 		"images": [
 			{
-				"src": "https://picsum.photos/400/500",
-				"alt": "Image 1"
+				"src": "/Apidex.webp",
+				"alt": "Apidex"
 			},
 			{
 				"src": "https://picsum.photos/400/500",

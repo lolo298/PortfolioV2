@@ -91,14 +91,14 @@
 <div class="full-screen relative z-20">
 	<div class="relative full z-10">
 		<h1
-			class="text-5xl lg:text-7xl lg:w-2/3 lg:mx-auto xl:text-[8rem] xl:w-2/3 text-white font-bold full text-center flex justify-center items-center flex-col"
+			class="text-5xl lg:text-7xl lg:w-2/3 lg:mx-auto xl:text-[6rem] xl:w-2/3 text-white font-bold full text-center flex justify-center items-center flex-col"
 		>
-			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur Back-End</span>
+			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur FullStack</span>
 		</h1>
 		<h1
-			class="text-5xl lg:text-7xl lg:w-2/3 lg:mx-auto xl:text-[8rem] xl:w-2/3 text-black bg-primary font-bold absolute inset-0 [clip-path:url(#clip0)] full text-center flex justify-center items-center flex-col"
+			class="text-5xl lg:text-7xl lg:w-2/3 lg:mx-auto xl:text-[6rem] xl:w-2/3 text-black bg-primary font-bold absolute inset-0 [clip-path:url(#clip0)] full text-center flex justify-center items-center flex-col"
 		>
-			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur Back-End</span>
+			<span>Bonjour, je suis Lorenzo Aoulini</span><span>Développeur FullStack</span>
 		</h1>
 	</div>
 	<div

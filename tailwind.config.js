@@ -2,7 +2,7 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts}', './src/assets/projects.json'],
 	theme: {
 		extend: {
 			colors: {
@@ -35,7 +35,7 @@ export default {
 				}
 			},
 			fontFamily: {
-				primary: ['aeoniktrial', ...defaultTheme.fontFamily.sans]
+				primary: ['Inter', ...defaultTheme.fontFamily.sans]
 			},
 			spacing: {
 				'2/1': '200%',
@@ -46,7 +46,10 @@ export default {
 			},
 			gridTemplateColumns: {
 				'image-3': '11fr 19fr 7fr'
-			}
+			},
+			maxWidth: {
+				'1/2': '50%',
+			},
 		}
 	},
 	plugins: []

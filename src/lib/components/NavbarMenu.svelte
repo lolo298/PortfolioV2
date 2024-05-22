@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { HamburgerMenuStore } from '$lib/store';
+	import Links from './Links.svelte';
+	import Pages from './Pages.svelte';
 
 	function toggleMenu() {
 		HamburgerMenuStore.toggle();
@@ -16,13 +18,9 @@
 	</div>
 
 	<div class="h-1/2 flex flex-col justify-evenly items-center text-5xl text-white">
-		<a href="/#page">A propos</a>
-		<a href="/projets#page">Projets</a>
-		<a href="/">Mon CV</a>
+		<Pages />
 	</div>
 	<div class="h-12 flex justify-evenly text-xl text-primary-500">
-		<a href="/">Linkedin</a>
-		<a href="/">Github</a>
-		<a href="/">Mail</a>
+		<Links />
 	</div>
 </div>

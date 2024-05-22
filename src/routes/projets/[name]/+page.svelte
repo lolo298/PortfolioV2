@@ -29,8 +29,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="text-xl md:text-3xl lg:text-4xl">
-		<p>{project.content}</p>
+	<section class="text-xl md:text-3xl lg:text-4xl text-justify">
+		<!-- {@html project.content} -->
+		<svelte:component this={project.content} />
 	</section>
 	{#if project.images.length > 0}
 		<section class="flex flex-col gap-4 mt-4 md:grid grid-cols-2">
