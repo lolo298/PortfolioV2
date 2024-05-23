@@ -6,9 +6,21 @@
 
 	export let data: PageData;
 	const { project } = data;
-
 	let showPage = false;
+	console.log(project);
 </script>
+
+<svelte:head>
+	<title>{project.title} - Lorenzo Aoulini</title>
+		<meta name="title" content={project.title}>
+		<meta name="description" content={project.description}>
+		<meta name="keywords" content={project.meta.keywords.join(', ')}>
+		<meta property="og:title" content={project.title}>
+		<meta property="og:description" content={project.description}>
+		<meta property="og:image" content={project.images[0].src}>
+		<meta property="og:url" content={`https://lorenzoaoulini.com/${project.url}`}>
+
+</svelte:head>
 
 <Viewer />
 <div class="p-2">
@@ -41,7 +53,7 @@
 						use:viewer
 						src={image.src}
 						alt={image.alt}
-						class="w-full aspect-[4/5] object-cover"
+						class="w-full aspect-[16/9] object-cover"
 					/>
 				</div>
 			{/each}

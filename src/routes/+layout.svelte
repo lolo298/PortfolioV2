@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
 	import { navigating } from '$app/stores';
 	import Loader from '$lib/components/Loader.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';

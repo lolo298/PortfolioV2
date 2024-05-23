@@ -1,12 +1,21 @@
 ---
 title: Portfolio
+order: 0
 description: Mon portfolio en ligne
 role: Dev
 client: Lorenzo Aoulini
 date: 2024
 images:
-  - src: /portfolio.png
+  - src: /portfolio.webp
     alt: portfolio
+meta:
+  keywords: 
+    - Lorenzo aoulini
+    - Portfolio
+    - Développement web
+    - SvelteKit
+    - TailwindCSS
+    - Figma
 ---
 
 

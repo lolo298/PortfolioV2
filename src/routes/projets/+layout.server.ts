@@ -19,11 +19,9 @@ export const load: LayoutServerLoad = async () => {
 				url: `/projets/${slug}#page`
 			});
 		}
-
-
 	}
 
 	return {
-		projects: metadatas
+		projects: metadatas.sort((a,b) => a.order >= b.order ? 1 : -1)
 	};
 };

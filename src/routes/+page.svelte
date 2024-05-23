@@ -3,6 +3,17 @@
 	import iutImg from '$assets/img/iut.png?enhanced';
 </script>
 
+<svelte:head>
+	<title>Lorenzo Aoulini</title>
+	<meta name="title" content="Lorenzo Aoulini">
+	<meta name="description" content="Lorenzo Aoulini - Développeur FullStack">
+	<meta name="keywords" content="Lorenzo Aoulini, Développeur FullStack, Développeur Web, Développeur FrontEnd, Développeur BackEnd">
+	<meta property="og:title" content="Lorenzo Aoulini">
+	<meta property="og:description" content="Lorenzo Aoulini - Développeur FullStack">
+	<meta property="og:image" content="§$assets/img/lorenzo.jpg§">
+	<meta property="og:url" content="https://lorenzoa.dev">
+</svelte:head>
+
 <figure>
 	<blockquote class="py-8">
 		<p class="text-xl md:text-3xl lg:text-4xl xl:text-5xl">
