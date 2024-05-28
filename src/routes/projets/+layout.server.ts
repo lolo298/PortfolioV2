@@ -20,7 +20,7 @@ export const load: LayoutServerLoad = async () => {
 			});
 		}
 	}
-
+console.log(metadatas);
 	return {
 		projects: metadatas.sort((a,b) => a.order >= b.order ? 1 : -1)
 	};
