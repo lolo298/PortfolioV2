@@ -6,14 +6,18 @@ role: Dev
 client: IUT
 date: 2024
 images:
-	- src: https://laval.digifactory.fr/img/upload/ct/6207/RS-Billetterie.png
-	  alt: Laval Virtual
+  - src: https://laval.digifactory.fr/img/upload/ct/6207/RS-Billetterie.png
+    alt: Laval Virtual
+  - src: /img/lavalvirtual/InitialTerrain.webp
+    alt: Le batiement
+  - src: /img/lavalvirtual/FireTerrain.webp
+    alt: L'incendie
 meta:
   keywords: 
     - Lorenzo aoulini
     - Laval virtal
     - VR
-    - #StudentLimitedTime
+    - StudentLimitedTime
     - Unity
 ---
 

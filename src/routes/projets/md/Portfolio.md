@@ -6,7 +6,7 @@ role: Dev
 client: Lorenzo Aoulini
 date: 2024
 images:
-  - src: /portfolio.webp
+  - src: /img/portfolio.webp
     alt: portfolio
 meta:
   keywords: 
