@@ -33,8 +33,4 @@ Ce projet a permis de renforcer mes compétences en travail d'équipe et de mieu
   a {
     @apply text-primary-500 hover:underline;
   }
-
-  ul {
-    @apply list-disc list-inside;
-  }
 </style>

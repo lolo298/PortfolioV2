@@ -8,14 +8,12 @@ export const load: LayoutServerLoad = async () => {
 	const metadatas: ProjectList[] = [];
 
 	const paths = import.meta.glob('/src/routes/projets/md/*.md', {eager: true});
-	console.log(paths)
 	for (const path in paths) {
 		const file = paths[path];
 		const slug = path.split('/').at(-1)?.replace('.md', '')
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const meta = file.metadata as Omit<ProjectMeta, 'content'>;
-			console.log(slug, meta.images);
 			metadatas.push({
 				...meta,
 				url: `/projets/${slug}#page`

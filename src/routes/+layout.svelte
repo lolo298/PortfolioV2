@@ -32,7 +32,6 @@
 				wrapper.classList.remove('overflow-hidden');
 				window.onresize = () => {
 					let vpHeight = window.innerHeight;
-					console.log('scroll')
 					scrollTo({
 					top: vpHeight,
 					behavior: 'smooth'

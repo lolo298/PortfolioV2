@@ -7,13 +7,11 @@ export const viewer: Action = (node) => {
 	if (!isImg(node)) {
 		throw new Error('Viewer action can only be used on img elements');
 	}
-	console.log('viewer action', node);
 
 	node.addEventListener('click', () => openViewer(node));
 };
 
 function openViewer(node: HTMLImageElement) {
-	console.log('viewer action click', node);
 	const bounding = node.getBoundingClientRect();
 	
 	const rem = RemToPx(1);
