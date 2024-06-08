@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Competence from '$lib/components/Competence.svelte';
-	import iutImg from '$assets/img/iut.png?enhanced';
 </script>
 
 <svelte:head>
@@ -10,7 +9,7 @@
 	<meta name="keywords" content="Lorenzo Aoulini, Développeur FullStack, Développeur Web, Développeur FrontEnd, Développeur BackEnd">
 	<meta property="og:title" content="Lorenzo Aoulini">
 	<meta property="og:description" content="Lorenzo Aoulini - Développeur FullStack">
-	<meta property="og:image" content="§$assets/img/lorenzo.jpg§">
+	<meta property="og:image" content="§$assets/img/Lorenzo.jpg§">
 	<meta property="og:url" content="https://lorenzoa.dev">
 </svelte:head>
 
