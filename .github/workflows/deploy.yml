@@ -30,9 +30,10 @@ jobs:
           bun run build
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           # this should match the `pages` option in your adapter-static options
+          name: build
           path: 'build/'
 
   deploy:
@@ -40,7 +41,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Download Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: build
     - name: copy file via ssh
       uses: appleboy/scp-action@v0.1.7
       with:
