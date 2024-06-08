@@ -52,5 +52,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        source: "build/"
+        source: "."
         target: /var/www/html/portfolioV2
