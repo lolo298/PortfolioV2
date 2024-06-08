@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import { RemToPx } from '$lib/utils';
 	import anime from 'animejs';
+	import { onNavigate } from '$app/navigation';
 
 	let initialY = 0;
 	let viewer: HTMLImageElement;
@@ -20,6 +21,10 @@
 				initialY = window.innerHeight
 			});
 		}
+	});
+
+	onNavigate(() => {
+		ViewerStore.close();
 	});
 
 	ViewerStore.subscribe(({ isOpen, pos, src, node }) => {

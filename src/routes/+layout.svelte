@@ -52,12 +52,12 @@
 </script>
 
 <div class="full-screen overflow-hidden" bind:this={wrapper}>
-	<Loader bind:loaded loadingTime={0} />
+	<Loader bind:loaded loadingTime={4500} />
 	<main id="page" class="relative p-4 lg:p-8 bg-secondary-100 h-screen">
 		<NavbarMenu />
 		<div bind:this={scrollContent} class="bg-white rounded-lg overflow-y-scroll overflow-x-hidden h-full">
 			<Navbar />
-			<div class="*:p-2 md:*:p-16 lg:*:p-20 xl:*:p-36 relative flex flex-col gap-16 text-base">
+			<div class="*:p-2 md:*:p-16 lg:*:p-20 xl:*:p-36 relative flex flex-col gap-8 text-base">
 				<slot />
 			</div>
 		</div>

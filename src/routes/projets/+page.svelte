@@ -8,7 +8,7 @@
 
 {#each projects as project, i}
 	<div
-		class={`flex justify-between items-center ${i % 2 ? 'flex-row-reverse md:!pl-0' : 'md:!pr-0'}`}
+		class={`flex justify-between items-center ${i % 2 ? 'md:flex-row-reverse md:!pl-0' : 'md:!pr-0'}`}
 	>
 		<div class="flex flex-col gap-4 md:gap-6">
 			<h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">{project.title}</h2>

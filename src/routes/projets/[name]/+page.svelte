@@ -25,6 +25,9 @@
 <Viewer />
 <div class="p-2">
 	<section>
+		<div>
+			<a class="text-primary" href="/projets#page"><span class="fa-solid fa-arrow-left"></span><span>Retour</span></a>
+		</div>
 		<h2 class="text-5xl mt-10">{project.title}</h2>
 		<div class="flex gap-4 flex-col my-8 md:flex-row md:gap-36 xl:gap-48">
 			<div>

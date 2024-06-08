@@ -24,17 +24,22 @@
 
 	onMount(() => {
 		isMounted = true;
-		setTimeout(() => {
+		const hash = window.location.hash;
+		if (hash.includes('page')) {
 			loaded = true;
-			for (const animation of animations) {
-				animation.pause();
-				animation.seek(0);
-			}
-
-			clearInterval(textInterval);
-
-			loadingText = '';
-		}, loadingTime);
+		} else {
+			setTimeout(() => {
+				loaded = true;
+				for (const animation of animations) {
+					animation.pause();
+					animation.seek(0);
+				}
+				
+				clearInterval(textInterval);
+				
+				loadingText = '';
+			}, loadingTime);
+		}
 	});
 
 	$: {
