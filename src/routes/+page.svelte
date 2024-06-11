@@ -34,8 +34,8 @@
 <div>
 	<h2 class="atext-2xl md:text-4xl lg:text-5xl mb-8">A propos de moi</h2>
 	<p class="md:text-3xl lg:text-4xl">
-		Je suis développeur full-stack et égallement alternant chez bimeo.
-		Passionné par le domaine du développement et de la tech, je suis toujours à la recherche de nouveaux projets pour mettre mes compétences a l'épreuve.
+		Je suis développeur full-stack et également alternant chez bimeo.
+		Passionné par le domaine du développement et de la tech, je suis toujours à la recherche de nouveaux projets pour mettre mes compétences à l'épreuve.
 	</p>
 </div>
 
@@ -54,25 +54,23 @@
 <div class="!p-0 md:!p-20 lg:!p-28">
 	<h2 class="text-2xl mb-8 p-2 md:text-3xl lg:text-4xl">Experience</h2>
 	<div class="divide-y-2 divide-black *:p-2">
-		<div class="flex gap-4 justify-between items-baseline py-5 text-xl md:text-3xl lg:text-4xl">
+		<div class="grid grid-cols-experience gap-4 justify-center items-center py-5 text-xl md:text-3xl lg:text-4xl">
 			<span class="text-sm md:text-xl lg:text-2xl">2024</span>
-			<span>Developpeur FullStack</span>
-			<span>Bimeo</span>
+			<span>Développeur FullStack</span>
+			<span class="text-end">Bimeo</span>
 		</div>
-		<div class="flex gap-4 justify-between items-baseline py-5 text-xl md:text-3xl lg:text-4xl">
+		<div class="grid grid-cols-experience gap-4 justify-center items-center py-5 text-xl md:text-3xl lg:text-4xl">
 			<span class="text-sm md:text-xl lg:text-2xl">2022 - 2023</span>
-			<span>Developpeur FullStack</span>
-			<span>Icicartegrise</span>
+			<span>Développeur FullStack</span>
+			<span class="text-end">Icicartegrise</span>
 		</div>
-		<div class="flex gap-4 justify-between items-baseline py-5 text-xl md:text-3xl lg:text-4xl">
+		<div class="grid grid-cols-experience gap-4 justify-center items-center py-5 text-xl md:text-3xl lg:text-4xl">
 			<span class="text-sm md:text-xl lg:text-2xl">2021 - 2024</span>
 			<span>BUT MMI - option développement web</span>
-			<span>Bimeo</span>
 		</div>
-		<div class="flex gap-4 justify-between items-baseline py-5 text-xl md:text-3xl lg:text-4xl">
-			<span class="text-sm md:text-xl lg:text-2xl">2024</span>
+		<div class="grid grid-cols-experience gap-4 justify-center items-center py-5 text-xl md:text-3xl lg:text-4xl">
+			<span class="text-sm md:text-xl lg:text-2xl">2021</span>
 			<span>Bac STI2D - option SIN</span>
-			<span>Bimeo</span>
 		</div>
 	</div>
 </div>

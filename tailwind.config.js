@@ -45,7 +45,8 @@ export default {
 				'wscreen-1/2': '50vw'
 			},
 			gridTemplateColumns: {
-				'image-3': '11fr 19fr 7fr'
+				'image-3': '11fr 19fr 7fr',
+				'experience': '1fr 3fr 1fr',
 			},
 			maxWidth: {
 				'1/2': '50%',
