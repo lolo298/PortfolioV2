@@ -6,6 +6,10 @@
 	const { projects } = data;
 </script>
 
+<svelte:head>
+	<title>Projets</title>
+</svelte:head>
+
 {#each projects as project, i}
 	<div
 		class={`flex justify-between items-center ${i % 2 ? 'md:flex-row-reverse md:!pl-0' : 'md:!pr-0'}`}
