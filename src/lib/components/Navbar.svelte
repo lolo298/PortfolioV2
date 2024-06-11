@@ -24,7 +24,7 @@
 
 	<div class="flex justify-between items-center h-full px-4 text-primary">
 		<span class="px-2 font-bold md:text-2xl xl:text-3xl">Lorenzo Aoulini</span>
-		<button on:click={toggleMenu} class="md:hidden"
+		<button on:click={toggleMenu} class="md:hidden" aria-label="menu"
 			><i class="fa-solid fa-bars text-2xl"></i></button
 		>
 		<div class="hidden md:flex text-xl xl:text-2xl gap-8">
