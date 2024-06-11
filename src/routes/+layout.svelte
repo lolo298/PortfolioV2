@@ -12,9 +12,13 @@
 	let wrapper: HTMLDivElement;
 	let isMounted = false;
 	let scrollContent: HTMLDivElement;
+	let scrolled = false;
 
 	onMount(() => {
 		isMounted = true;
+		window.addEventListener('scrollend', () => {
+			scrolled = true;
+		}, { once: true });
 	});
 
 	navigating.subscribe((nav) => {
@@ -51,7 +55,9 @@
 </script>
 
 <div class="full-screen overflow-hidden" bind:this={wrapper}>
-	<Loader bind:loaded loadingTime={4500} />
+	{#if !scrolled}
+		<Loader bind:loaded loadingTime={4500} />
+	{/if}
 	<main id="page" class="relative p-4 lg:p-8 bg-secondary-100 h-screen">
 		<NavbarMenu />
 		<div bind:this={scrollContent} class="bg-white rounded-lg overflow-y-scroll overflow-x-hidden h-full">
