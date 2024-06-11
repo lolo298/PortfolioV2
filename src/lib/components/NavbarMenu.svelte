@@ -19,7 +19,7 @@
 	on:click={(e) => {
 		// @ts-ignore
 		if ((e.target)?.tagName !== 'A') return;
-		toggleMenu()
+		HamburgerMenuStore.close();
 		}}
 >
 	<div class="h-12 flex justify-between items-center px-4 text-primary-500">
