@@ -3,8 +3,8 @@ import type { PageLoad } from './$types';
 
 export const load = (async ({ params: { name }, parent }) => {
 	const data = await parent();
-	const project = data.projects.find((project) => project.title.replace(/ /g, '') === name);
 
+	const project = data.projects.find((project) => project.title.replace(/ /g, '').toLowerCase() === name);
 	if (!project) {
 		error(404, 'Project not found');
 	}

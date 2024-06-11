@@ -59,8 +59,8 @@ interface IViewerData {
 }
 
 interface IPos {
-	width: number;
-	height: number;
+	width: number | "auto";
+	height: number | "auto";
 	top: number;
 	left: number;
 	x: number;

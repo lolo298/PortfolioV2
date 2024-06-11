@@ -28,13 +28,17 @@
 	});
 
 	ViewerStore.subscribe(({ isOpen, pos, src, node }) => {
-		if (isOpen) {
+		if (isOpen && viewer) {
+			if (pos.height === "auto") {
+				viewer.style.height = "auto";
+			}
+			if (pos.width === "auto") {
+				viewer.style.width = "auto";
+			}
 			anime({
 				targets: viewer,
 				width: [node?.width, pos.width],
 				height: [node?.height, pos.height],
-				top: [pos.y + (node?.scrollTop ?? 0), pos.top],
-				left: [pos.x, pos.left],
 				duration: 1000,
 				easing: 'easeInOutQuad'
 			});
@@ -61,10 +65,9 @@
 		</button>
 		<img
 			bind:this={viewer}
-			class="absolute w-0 h-0 bg-secondary-50"
+			class="absolute w-0 h-0 bg-secondary-50 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 			src={$ViewerStore.src}
 			alt=""
-			style="left: 0;top: 0;"
 		/>
 	</div>
 </Portal>
