@@ -22,13 +22,13 @@ meta:
 Ce site web est un projet personnel réalisé dans le cadre de mon apprentissage du développement-web. Il m'a permis de mettre en pratique mes compétences acquises.
 <br />
 
-Ce site est réaliser avec [svelteKit](https://kit.svelte.dev/) et [TailwindCSS](https://tailwindcss.com/).
+Ce site est réalisé avec [svelteKit](https://kit.svelte.dev/) et [TailwindCSS](https://tailwindcss.com/).
 Cela m'a permis de découvrir ces deux technologies et de me familiariser avec elles.
 
-J'ai integrer le design du site a partir d'une maquette figma fournie par [Clément Lascar](https://clement-lascar.com/) que je remecie pour son travail.
+J'ai intégré le design du site à partir d'une maquette figma fournie par [Clément Lascar](https://clement-lascar.com/) que je remercie pour son travail.
 <br />
 
-Cela m'a permis de déveloper mes compétences techniques mais aussi de mieux m'adapter à un design existant et de travailler en collaboration avec un designer.
+Cela m'a permis de développer mes compétences techniques mais aussi de mieux m'adapter à un design existant et de travailler en collaboration avec un designer.
 
 
 <style>

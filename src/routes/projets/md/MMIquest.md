@@ -25,20 +25,21 @@ meta:
     - MMI quest
 ---
 
-Lors de ma deuxième année de BUT MMI, nous avons eu a réaliser un parcours pour les portes ouvertes de l'[IUT de Lannion](https://iut-lannion.univ-rennes.fr/). Ce parcours devait servir a guider les visiteurs tout en leur donnant des informations sur la formation MMI.
+Lors de ma deuxième année de BUT MMI, nous avons eu a réaliser un parcours pour les portes ouvertes de l'[IUT de Lannion](https://iut-lannion.univ-rennes.fr/). Ce parcours devait servir à guider les visiteurs tout en leur donnant des informations sur la formation MMI.
 <br />
 
 ### Idée
 
-Nous avons eu l'idée de réaliser une application web qui permettrait aux visiteurs de suivre un parcours en répondant a des questions sur la formation. Pour cela, nous avons décidé de réaliser un jeu de type "RPG" ou le joueur devait répondre a des questions pour avancer dans le jeu.
+Nous avons eu l'idée de réaliser une application web qui permettrait aux visiteurs de suivre un parcours en répondant à des questions sur la formation. Pour cela, nous avons décidé de réaliser un jeu de type "RPG" ou le joueur devait répondre à des questions pour avancer dans le jeu.
 
-La formation étant pluri-disciplinaire, nous avons décider d'integrer un petit questionnaire permettant savoir quel professeur serait le plus adapté pour répondre a leurs questions. Pour ce faire, nous avons utiliser le concept de "Tinder" et réaliser des cartes a "swiper" pour chaque matière, qui a la fin du questionnaire, donnerait le nom du professeur le plus adapté.
+La formation étant pluri-disciplinaire, nous avons décidé d'integrer un petit questionnaire permettant savoir quel professeur serait le plus adapté pour répondre à leurs questions. Pour ce faire, nous avons utilisé le concept de "Tinder" et réaliser des cartes a "swiper" pour chaque matière, qui a la fin du questionnaire, donnerait le nom du professeur le plus adapté.
 <br />
 
 ### Retour
 
 Ce projet nous a permis de mettre en pratique nos compétences mais également de mieux comprendre les attentes utilisateurs.
 
+Vous pouvez retrouver le site en ligne à l'adresse suivante : [MMI Quest](https://mmiquest.lorenzoa.dev/) 
 
 <style>
   a {

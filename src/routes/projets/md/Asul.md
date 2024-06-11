@@ -19,12 +19,12 @@ meta:
 ---
 
 
-Ce projet a été réalisé lors de ma troisième année de BUT MMI. L'association sportive de notre IUT, l'ASUL, nous a demander de réaliser un dashboard pour suivre les performances des élèves lors de match de badminton ainsi qu'un suivi des scores en temps réel lors des matchs.
+Ce projet a été réalisé lors de ma troisième année de BUT MMI. L'association sportive de notre IUT, l'ASUL, nous a demandé de réaliser un dashboard pour suivre les performances des élèves lors de matchs de badminton ainsi qu'un suivi des scores en temps réel lors des matchs.
 <br />
 
 Ce projet est construit avec [Astro](https://astro.build/) et [React](https://reactjs.org/) pour le front-end et [Supabase](https://supabase.io/) pour la base de données et le temps réel.
 
-Lors de ce projet j'ai réaliser la connexion des élèves via google Oauth, ainsi que la création d'un wrapper react pour la bibliothèque de graphique [ObservableHQ](https://observablehq.com/).
+Lors de ce projet j'ai réalisé la connexion des élèves via google Oauth, ainsi que la création d'un wrapper react pour la bibliothèque de graphique [ObservableHQ](https://observablehq.com/).
 <br />
 
 Ce projet a permis de renforcer mes compétences en travail d'équipe et de mieux comprendre le fonctionnement de react.
