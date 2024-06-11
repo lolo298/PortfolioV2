@@ -6,17 +6,17 @@ role: Dev
 client: IUT
 date: 2023
 images:
-  - src: /img/tindrpg/tindrpg.png
+  - src: /img/tindrpg/tindrpg.webp
     alt: tindrpg
-  - src: /img/tindrpg/map.png
+  - src: /img/tindrpg/map.webp
     alt: tindrpg map
-  - src: /img/tindrpg/fight.png
+  - src: /img/tindrpg/fight.webp
     alt: tindrpg fight
-  - src: /img/tindrpg/reward.png
+  - src: /img/tindrpg/reward.webp
     alt: tindrpg reward
-  - src: /img/tindrpg/faq.png
+  - src: /img/tindrpg/faq.webp
     alt: tindrpg faq
-  - src: /img/tindrpg/faq_profs.png
+  - src: /img/tindrpg/faq_profs.webp
     alt: tindrpg faq profs
 meta:
   keywords: 
