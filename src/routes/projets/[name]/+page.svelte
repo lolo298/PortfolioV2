@@ -6,6 +6,7 @@
 
 	export let data: PageData;
 	const { project } = data;
+	const images = project.images.filter(image => !image.hidden);
 	let showPage = false;
 </script>
 
@@ -49,7 +50,7 @@
 	</section>
 	{#if project.images.length > 0}
 		<section class="flex flex-col gap-4 mt-4 md:grid grid-cols-2">
-			{#each project.images as image, i}
+			{#each images as image, i}
 				<div class="w-full overflow-hidden rounded-md" class:col-span-2={i === 0}>
 					<img
 						use:viewer

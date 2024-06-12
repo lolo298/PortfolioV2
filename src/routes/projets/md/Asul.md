@@ -6,6 +6,9 @@ role: Dev
 client: IUT
 date: 2024
 images:
+  - src: /img/asul/Badminton.webp
+    alt: PBadminton
+    hidden: true
   - src: /img/asul/home.webp
     alt: Page d'acceuil
   - src: /img/asul/dashboard.webp

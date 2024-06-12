@@ -38,6 +38,8 @@
 			<p class="md:text-xl xl:text-2xl">{project.description}</p>
 			<Button class="md:text-xl xl:text-2xl" asElem="a" href={project.url}>Voir plus</Button>
 		</div>
-		<img src={project.images[0].src} alt={project.images[0].alt} class="hidden md:block md:w-1/2 xl:w-1/3" />
+		<div class="aspect-[16/9] hidden md:block md:w-1/2 xl:w-1/3 relative overflow-hidden">
+				<img src={project.images[0].src} alt={project.images[0].alt} class="absolute inset-0 size-full object-cover" />
+		</div>
 	</div>
 {/each}
