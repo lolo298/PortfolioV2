@@ -28,7 +28,7 @@
 <div class="images sticky !p-0 grid grid-cols-image-3 gap-5 items-center">
 	<enhanced:img src="$assets/img/iut.png" alt="IUT lannion" class="mx-auto aspect-[11/13] object-cover flex-[11] lg:aspect-[18/12]" />
 	<enhanced:img src="$assets/img/Lorenzo.jpg" alt="Lorenzo Aoulini" class="mx-auto aspect-[19/23] object-cover flex-[19] lg:w-1/2" />
-	<enhanced:img src="$assets/img/lcr.jpeg" alt="La croix rouge - La salle" class="mx-auto aspect-[7/16] object-cover flex-[7] lg:aspect-[8/13] lg:w-2/3"  />
+	<enhanced:img src="$assets/img/code.png" alt="La croix rouge - La salle" class="mx-auto aspect-[7/16] object-cover flex-[7] object-[5%] lg:aspect-[11/13] lg:w-2/3 lg:object-left"  />
 </div>
 
 <div>
