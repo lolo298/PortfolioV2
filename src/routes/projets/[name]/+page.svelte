@@ -19,8 +19,8 @@
 		<meta property="og:description" content={project.description}>
 		<meta property="og:image" content={project.images[0].src}>
 		<meta property="og:url" content={`https://lorenzoaoulini.com/${project.url}`}>
-		<meta property="canonical" content={`https://lorenzoaoulini.com/${project.url}`}>
-
+		<link rel="canonical" href={`https://lorenzoaoulini.com/${project.url.replace('#page', '')}`}>
+		
 </svelte:head>
 
 <Viewer />
