@@ -19,6 +19,7 @@
 		<meta property="og:description" content={project.description}>
 		<meta property="og:image" content={project.images[0].src}>
 		<meta property="og:url" content={`https://lorenzoaoulini.com/${project.url}`}>
+		<meta property="canonical" content={`https://lorenzoaoulini.com/${project.url}`}>
 
 </svelte:head>
 
