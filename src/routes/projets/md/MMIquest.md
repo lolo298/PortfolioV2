@@ -40,7 +40,7 @@ La formation étant pluri-disciplinaire, nous avons décidé d'integrer un petit
 Ce projet nous a permis de mettre en pratique nos compétences mais également de mieux comprendre les attentes utilisateurs.
 <br />
 
-Vous pouvez retrouver le site en ligne à l'adresse suivante : [MMI Quest](https://mmiquest.lorenzoa.dev/) 
+Vous pouvez retrouver le site en ligne à l'adresse suivante : [MMI Quest](https://jpommi.lorenzoa.dev/) 
 
 <style>
   a {

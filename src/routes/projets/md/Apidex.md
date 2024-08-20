@@ -26,7 +26,7 @@ Il s'agit d'un site répertoriant les différents pokémon présents dans les je
 Cela m'a permis de m'initier au Javascript asynchrone et au fonctionnement des apis REST, car les données sont récupérées depuis l'api [pokeapi](https://pokeapi.co/).
 <br />
 
-Vous pouvez retrouver le site en ligne à l'adresse suivante : [Apidex](https://lorenzoa.dev/apidex/) 
+Vous pouvez retrouver le site en ligne à l'adresse suivante : [Apidex](https://apidex.lorenzoa.dev/) 
 
 
 
