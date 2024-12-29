@@ -34,7 +34,7 @@
 <div>
 	<h2 class="atext-2xl md:text-4xl lg:text-5xl mb-8">A propos de moi</h2>
 	<p class="md:text-3xl lg:text-4xl">
-		Je suis développeur full-stack et également alternant chez bimeo.
+		Je suis actuellement alternant ingénieur logiciel a l'ESIEA.
 		Passionné par le domaine du développement et de la tech, je suis toujours à la recherche de nouveaux projets pour mettre mes compétences à l'épreuve.
 	</p>
 </div>
@@ -55,7 +55,7 @@
 	<h2 class="text-2xl mb-8 p-2 md:text-3xl lg:text-4xl">Experience</h2>
 	<div class="divide-y-2 divide-black *:p-2">
 		<div class="grid grid-cols-experience gap-4 justify-center items-center py-5 text-xl md:text-3xl lg:text-4xl">
-			<span class="text-sm md:text-xl lg:text-2xl">2024</span>
+			<span class="text-sm md:text-xl lg:text-2xl">2024 - 2024</span>
 			<span>Développeur FullStack</span>
 			<span class="text-end">Bimeo</span>
 		</div>
@@ -63,6 +63,10 @@
 			<span class="text-sm md:text-xl lg:text-2xl">2022 - 2023</span>
 			<span>Développeur FullStack</span>
 			<span class="text-end">Icicartegrise</span>
+		</div>
+	<div class="grid grid-cols-experience gap-4 justify-center items-center py-5 text-xl md:text-3xl lg:text-4xl">
+			<span class="text-sm md:text-xl lg:text-2xl">2024 - 2027</span>
+			<span>Diplome d'ingénieur logiciel - ESIEA</span>
 		</div>
 		<div class="grid grid-cols-experience gap-4 justify-center items-center py-5 text-xl md:text-3xl lg:text-4xl">
 			<span class="text-sm md:text-xl lg:text-2xl">2021 - 2024</span>
